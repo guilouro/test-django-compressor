@@ -61,6 +61,7 @@ STATICFILES_FINDERS = (
 COMPRESS_ENABLED = True
 COMPRESS_OUTPUT_DIR = ''
 
+COMPRESS_JS_FILTERS = ['compressor.filters.jsmin.SlimItFilter']
 COMPRESS_CSS_FILTERS = [
      #creates absolute urls from relative ones
     'compressor.filters.css_default.CssAbsoluteFilter',
